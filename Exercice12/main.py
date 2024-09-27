@@ -54,17 +54,15 @@ class Library:
     def available_books(self):
         if not self.books:
             print("Aucun livre disponible.")
-        print(f"                      {len(self.books)} livre(s) disponible(s)")
+        print(f"                    {len(self.books)} livre(s) disponible(s)")
         for book in self.books:
-            print("===================================================================")
-            print(f"Titre: {book.title}")
-            print("===================================================================")
+            self.display_book_title(book_title=book.title)
         print()
 
     def borrowed_books(self):
         if not self.borrowed_book_list:
             print("Aucun livre emprunté.")
-        print(f"                 {len(self.borrowed_book_list)} livre(s) emprunté(s)")
+        print(f"          {len(self.borrowed_book_list)} livre(s) emprunté(s)")
         for book in self.borrowed_book_list:
             self.display_book_title(book_title=book.title)
         print()

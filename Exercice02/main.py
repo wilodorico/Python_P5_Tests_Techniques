@@ -35,5 +35,5 @@ def display_student_average(student_name: str, students: dict):
 
 
 student_name = request_student_name()
-student_notes = display_student_grades(student_name=student_name, students=students)
-student_average = display_student_average(student_name=student_name, students=students)
+student_notes = display_student_grades(student_name, students)
+student_average = display_student_average(student_name, students)
