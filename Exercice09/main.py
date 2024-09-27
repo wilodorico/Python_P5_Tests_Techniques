@@ -11,7 +11,7 @@ class Rectangle:
         return 2 * (self.width + self.length)
 
 
-rectangle = Rectangle(5, 3)  # 5:width & 3:length
+rectangle = Rectangle(width=5, length=3)
 print("Largeur:", rectangle.width)
 print("Longueur:", rectangle.length)
 print("Aire:", rectangle.calculate_area())
